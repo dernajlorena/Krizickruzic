@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    background-color: rgba(248, 87, 221, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #dd2b4c;
+    border-radius: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+}
+
+.cell.x {
+    color: #ff6b6b;
+}
+
+.cell.o {
+    color: #4ecdc4;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #5d3fd3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a32a8;
+}
+
+.game-status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
